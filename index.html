@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="styles.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+
+    <div class="navbar bg-light">
+      <div class="navbar-brand ">FUNHUB
+
+      </div>
+      <a href="https://mahidharmannuru5.github.io/dice/" navbar-item>DICE</a>
+
+      </div>
+
+    </div>
+    <br>
+
+    <div class="prcontainer">
+
+
+    <div class="card text-white mb-3 bg-primary" style="max-width:40rem;">
+      <div class="card-header">Love calculator
+
+      </div>
+      <div class="card-body">
+        <div class="card-title">
+
+          <div class="container">
+
+                <label for="yname">Yourname:</label>
+                <input type="text" id="NameOne" placeholder="ne peru prend">
+              </div>
+              <div class="container">
+                <label for="lname">loved one:</label>
+                <input type="text" id="NameTwo"  placeholder="ne loves prend">
+              </div>
+              <div class="container">
+                <br>
+                <a href="#" onclick="love()"> <button type="button" name="button" class="btn btn-dark">calculate</button> </a>
+              </div>
+              <div class="container">
+                <h3 id="print">your realtionship result here</h3>
+                <h2 id="statement"></h2>
+
+              </div>
+      </div>
+
+    </div>
+  </div>
+
+<div class="gtcontainer">
+  <div class="card mb-3 bg-warning" style="max-width:40rem">
+    <div class="card-header">Crush Love Calc
+
+    </div>
+    <div class="card-body">
+      <div class="card-title">
+
+      </div>
+     <div class="container">
+        <label for="fname">your name:</label>
+        <input type="text" placeholder="your name" id="nameone">
+        <div class="container">
+          <label for="cname">Crushname:</label>
+          <input type="text" id="nametwo"name="" value="" placeholder="ne crush prend">
+
+        </div>
+        <div class="container">
+          <br>
+          <a href="#" onclick="hitme()"> <button type="button" class="btn"name="button">Hit Me I Say</button> </a>
+
+        </div>
+</div>
+
+
+      <div class="container">
+        <h3 id="result">your realtionship result here</h3>
+        <h2 id="stat"></h2>
+
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script>
+    function love(){
+           var name1 = document.getElementById("NameOne").value;
+           var name2 = document.getElementById("NameTwo").value;
+           if(name1.length<=2){
+               alert("Enter at least 3 character");
+           }
+           if(name2.length<=2){
+               alert("Enter at least 3 character");
+           }
+           else{
+               var random = Math.floor(Math.random()*100);
+               document.getElementById("print").innerHTML = name1 + " and " + name2 + "=" +random + "%" + "of love";
+           }
+           if(random<=10 || random<=50){
+               document.getElementById("statement").innerHTML = "Good Relationship";
+           }
+           else if(random<=51 || random<=100){
+               document.getElementById("statement").innerHTML = "Lovely Relationship";
+           }
+       }
+       function hitme(){
+              var name3 = document.getElementById("nameone").value;
+              var name4 = document.getElementById("nametwo").value;
+              if(name3.length<=2){
+                  alert("Enter at least 3 character");
+              }
+              if(name4.length<=2){
+                  alert("Enter at least 3 character");
+              }
+              else{
+                  var random = Math.floor(Math.random()*100);
+                  document.getElementById("result").innerHTML = name3 + " and " + name4 + "=" +random + "%" + "of love";
+              }
+              if(random<=10 || random<=50){
+                  document.getElementById("stat").innerHTML = "you will be a good pair";
+              }
+              else if(random<=51 || random<=100){
+                  document.getElementById("stat").innerHTML = "you will be together soon";
+              }
+          }
+
+
+    </script>
+
+
+  </body>
+</html>
