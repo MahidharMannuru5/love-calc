@@ -1,0 +1,19 @@
+.card{
+  text-align: center;
+
+margin: auto;
+padding: 0;
+  align-items:center;
+  display: inline-table;
+
+}
+.prcontainer{
+  text-align: center;
+}
+
+.navbar-brand{
+  text-align: center;
+}
+body{
+  background-image: url(assets/img2.png);
+}
